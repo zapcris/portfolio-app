@@ -1,4 +1,4 @@
-mport streamlit as st
+import streamlit as st
 import base64
 
 # --- Helper function to load local images and encode as base64 ---
