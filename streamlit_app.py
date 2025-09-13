@@ -1,4 +1,4 @@
-import streamlit as st
+mport streamlit as st
 import base64
 
 # --- Helper function to load local images and encode as base64 ---
@@ -62,9 +62,9 @@ with col1:
     # For a local file, ensure it's in the same directory as this script.
     # image_path = "profile.jpg"
     # if st.path.exists(image_path):
-    #     st.image(image_path, caption="Your Name", use_column_width=True)
+    #     st.image(image_path, caption="Your Name", use_container_width=True)
     # else:
-    st.image("https://placehold.co/400x400/2e86c1/ffffff?text=Your+Photo", caption="Your Name", use_column_width=True)
+    st.image("https://placehold.co/400x400/2e86c1/ffffff?text=Your+Photo", caption="Your Name", use_container_width=True)
 
 with col2:
     st.markdown("""
