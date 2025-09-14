@@ -9,7 +9,7 @@ def get_base64_image(image_path):
 
 # --- Page Configuration ---
 st.set_page_config(
-    page_title="My Portfolio",
+    page_title="Akshay Avhad",
     page_icon="💼",
     layout="wide"
 )
@@ -50,25 +50,28 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- Header Section ---
-st.markdown('<h1 class="main-header">My Portfolio</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">Akshay Avhad</h1>', unsafe_allow_html=True)
 
 # --- About Me Section ---
-st.markdown('<h2 class="section-header">About Me</h2>', unsafe_allow_html=True)
+st.markdown('<h2 class="section-header"> I am passionate about making factories smarter and more flexible, enabling people and companies to collaborate on building better products. ' \
+'My research examines how teams can organize themselves and utilize new technologies to enhance production, and I have been fortunate to work closely with innovative ' \
+'companies such as Lego A/S and Danfoss A/S. Through this work, I aim to create simple, effective solutions—from large system designs to imaginative digital tools like digital twins—so that ' \
+'everyone on the factory floor can benefit from a more connected and supportive work environment. </h2>', unsafe_allow_html=True)
 
 col1, col2 = st.columns([1, 2])
 
 with col1:
     # Use a placeholder image or a local file
     # For a local file, ensure it's in the same directory as this script.
-    # image_path = "profile.jpg"
+    image_path = "my_photo.png"
     # if st.path.exists(image_path):
     #     st.image(image_path, caption="Your Name", use_container_width=True)
     # else:
-    st.image("https://placehold.co/400x400/2e86c1/ffffff?text=Your+Photo", caption="Your Name", use_container_width=True)
+    st.image(image_path, caption="Akshay Avhad", use_container_width=True)
 
 with col2:
     st.markdown("""
-    Hello! I am **[Your Name]**, a passionate [Your Profession] with expertise in [Your Main Skills]. I am currently a [Your Current Title] at [Your Company]. My work focuses on [Describe your focus].
+    Hello! I am **[Your Name]**, a passionate [Your Profession] with expertise in [Your Main Skills]. I am currently a [Your Current Title] at [Your Company]. My work focuses on [My research has culminated in the development of planning and control systems for mobile production platforms, exhibiting structural self-organization. I have also contributed to demonstrators using simulation platforms such as Visual Components and Siemens Technomatix for leading industrial stakeholders, including Lego A/S and Danfoss A/S. A noteworthy outcome of this work is the creation of a reference architecture to establish greenfield smart factories designed around self-organisations.].
     
     Feel free to connect with me:
     * **GitHub:** [Link to your GitHub]
